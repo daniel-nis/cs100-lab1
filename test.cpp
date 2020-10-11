@@ -17,6 +17,11 @@ TEST(EchoTest, SpecialCharacters) {
         EXPECT_EQ("%", echo(2,test_val));
 }
 
+TEST(EchoTest, UpperCase) {
+        char* test_val[2]; test_val[0] = "./c-echo"; test_val[1] = "HELLO";
+        EXPECT_EQ("HELLO", echo(2,test_val));
+}
+
 
 int main(int argc, char **argv) {
   ::testing::InitGoogleTest(&argc, argv);
