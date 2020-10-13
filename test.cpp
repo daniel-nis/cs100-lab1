@@ -22,6 +22,11 @@ TEST(EchoTest, UpperCase) {
         EXPECT_EQ("HELLO", echo(2,test_val));
 }
 
+TEST(EchoTest, EqualComparison) {
+        char* test_val[3]; test_val[0] = "./c-echo"; test_val[1] = "hello"; test_val[2] = "hello";
+        ASSERT_EQ(test_val[1],test_val[2]);
+}
+
 
 int main(int argc, char **argv) {
   ::testing::InitGoogleTest(&argc, argv);

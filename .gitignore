@@ -6,3 +6,4 @@ area_calculator
 c-echo
 lib/
 test
+googletest
